@@ -73,7 +73,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="srachView" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-ZV-gTI" customClass="ClickableUIView" customModule="SratchCard" customModuleProvider="target">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="srachView" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-ZV-gTI" customClass="SRScratchView" customModule="SRScratchView">
                                                 <rect key="frame" x="0.0" y="95" width="248" height="248"/>
                                             </imageView>
                                         </subviews>

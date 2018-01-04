@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'SRScratchView_Example' do
-  pod 'SRScratchView', :path => '../'
+     pod 'SRScratchView', :path => '../'
 
   target 'SRScratchView_Tests' do
     inherit! :search_paths
