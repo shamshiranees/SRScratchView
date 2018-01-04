@@ -26,7 +26,7 @@ pod 'SRScratchView'
 ```
 ## Usage
 
-Change class of you scratch imageView to SRSrcatchView.
+Change class of your  imageView to SRSrcatchView.
 ```swift
 import SRScratchView
 
