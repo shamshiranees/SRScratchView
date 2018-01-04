@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51D103861FFE5E5D004C2720 /* screenShot.gif in Resources */ = {isa = PBXBuildFile; fileRef = 51D103851FFE5E5C004C2720 /* screenShot.gif */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,8 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A32D754199DA0968C06AD01 /* SRScratchView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SRScratchView.podspec; path = ../SRScratchView.podspec; sourceTree = "<group>"; };
-		4F4F1A9CA1AB8A61D6A41430 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3A32D754199DA0968C06AD01 /* SRScratchView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SRScratchView.podspec; path = ../SRScratchView.podspec; sourceTree = "<group>"; };
+		4F4F1A9CA1AB8A61D6A41430 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		51D103851FFE5E5C004C2720 /* screenShot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenShot.gif; sourceTree = "<group>"; };
 		5CFF4234B4103F3C09C4D11C /* Pods-SRScratchView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRScratchView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRScratchView_Tests/Pods-SRScratchView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SRScratchView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRScratchView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +48,7 @@
 		A1512253F854B54F60890059 /* Pods-SRScratchView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRScratchView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRScratchView_Tests/Pods-SRScratchView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A55C8EEE500B06D6718DF331 /* Pods_SRScratchView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SRScratchView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B430342557FBC59E92252438 /* Pods_SRScratchView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SRScratchView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F13083980A747E24E9FE222A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F13083980A747E24E9FE222A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				51D103851FFE5E5C004C2720 /* screenShot.gif */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D103861FFE5E5D004C2720 /* screenShot.gif in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

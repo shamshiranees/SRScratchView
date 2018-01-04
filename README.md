@@ -1,16 +1,21 @@
 # SRScratchView
 
-[![CI Status](http://img.shields.io/travis/smzranz@gmail.com/SRScratchView.svg?style=flat)](https://travis-ci.org/smzranz@gmail.com/SRScratchView)
+[![CI Status](http://img.shields.io/travis/shamshir.anees@gmail.com/SRScratchView.svg?style=flat)](https://travis-ci.org/shamshir.anees@gmail.com/SRScratchView)
 [![Version](https://img.shields.io/cocoapods/v/SRScratchView.svg?style=flat)](http://cocoapods.org/pods/SRScratchView)
 [![License](https://img.shields.io/cocoapods/l/SRScratchView.svg?style=flat)](http://cocoapods.org/pods/SRScratchView)
 [![Platform](https://img.shields.io/cocoapods/p/SRScratchView.svg?style=flat)](http://cocoapods.org/pods/SRScratchView)
+
+## ScreenShots
+
+![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SRScratchView/master/Example/SRScratchView/screenShot.gif)
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-
+Swift 3.0+ <br>
+Xcode 8.0+ <br>
 ## Installation
 
 SRScratchView is available through [CocoaPods](http://cocoapods.org). To install
@@ -19,10 +24,46 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SRScratchView'
 ```
+## Usage
+
+Change class of you scratch imageView to SRSrcatchView.
+```swift
+import SRScratchView
+
+//Add delegate
+class ViewController: UIViewController,SRScratchViewDelegate{
+
+override func viewDidLoad() {
+super.viewDidLoad()
+
+self.scratchImageView.delegate = self
+
+}
+
+
+//delegate method
+func scratchCardEraseProgress(eraseProgress: Float) {
+
+//Here you will get erase progress in percentage
+
+}
+}
+
+```
+### Customize
+```swift
+
+//width of srcatch line
+yourView.lineWidth = 40.0
+
+//shape of scrach line
+yourView.lineType = .square
+```
+
 
 ## Author
 
-smzranz@gmail.com, shamshir.anees@citrusinformatics.com
+ shamshir.anees@gmail.com
 
 ## License
 
