@@ -8,29 +8,30 @@
 import UIKit
 
 
-protocol SRScratchViewDelegate: class {
+@objc
+public protocol SRScratchViewDelegate: class {
     
     func scratchCardEraseProgress(eraseProgress: Float)
 }
 
 
-class SRScratchView:UIImageView {
+public class SRScratchView:UIImageView {
     
     
-    weak var delegate: SRScratchViewDelegate?
+    public weak var delegate: SRScratchViewDelegate?
     
     private var finalLocation: CGPoint?
     
-    var lineType: CGLineCap = .round
-    var lineWidth: CGFloat = 30.0
+    public lazy var lineType: CGLineCap = .round
+    public lazy var lineWidth: CGFloat = 30.0
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
         isUserInteractionEnabled = true
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         guard  let touch = touches.first else {
             
@@ -40,7 +41,7 @@ class SRScratchView:UIImageView {
         finalLocation = touch.location(in: self)
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         guard  let touch = touches.first, let point = finalLocation else {
             
@@ -126,3 +127,4 @@ class SRScratchView:UIImageView {
         return Float(alphaOnlyPixels) / Float(bitmapByteCount)
     }
 }
+
