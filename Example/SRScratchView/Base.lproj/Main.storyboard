@@ -22,16 +22,13 @@
         <!--View Controller-->
         <scene sceneID="FIr-yK-LeS">
             <objects>
-                <viewController id="yLA-U6-F7X" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="yLA-U6-F7X" customClass="ViewController" customModule="SRScratchView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rff-dH-tHF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Z2o-wx-Gdj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOU-YE-mDQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zk5-cC-Whu">
                                         <rect key="frame" x="63" y="100" width="248" height="248"/>
@@ -73,19 +70,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="srachView" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-ZV-gTI" customClass="SRScratchView" customModule="SRScratchView">
-                                                <rect key="frame" x="0.0" y="95" width="248" height="248"/>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="F7A-ZV-gTI" firstAttribute="width" secondItem="Zk5-cC-Whu" secondAttribute="width" id="3cJ-Dy-BGP"/>
-                                            <constraint firstItem="F7A-ZV-gTI" firstAttribute="height" secondItem="Zk5-cC-Whu" secondAttribute="height" id="7Qb-zH-46O"/>
                                             <constraint firstItem="tJf-ke-vRP" firstAttribute="top" secondItem="Zk5-cC-Whu" secondAttribute="top" constant="25" id="HaH-Z1-FWH"/>
-                                            <constraint firstItem="F7A-ZV-gTI" firstAttribute="centerX" secondItem="Zk5-cC-Whu" secondAttribute="centerX" id="Ins-aG-k3c"/>
                                             <constraint firstItem="tJf-ke-vRP" firstAttribute="centerX" secondItem="Zk5-cC-Whu" secondAttribute="centerX" id="J1b-Ra-wMp"/>
                                             <constraint firstItem="aes-15-IVl" firstAttribute="top" secondItem="dpt-jd-KZR" secondAttribute="bottom" id="MPR-V3-XaV"/>
-                                            <constraint firstItem="F7A-ZV-gTI" firstAttribute="centerY" secondItem="Zk5-cC-Whu" secondAttribute="centerY" constant="95" id="MfC-K9-L5J"/>
                                             <constraint firstItem="H7v-A2-Iry" firstAttribute="centerY" secondItem="aes-15-IVl" secondAttribute="centerY" constant="-1" id="RUx-MA-gH1"/>
                                             <constraint firstAttribute="width" constant="248" id="UUQ-KS-d68"/>
                                             <constraint firstItem="aes-15-IVl" firstAttribute="leading" secondItem="H7v-A2-Iry" secondAttribute="trailing" constant="5" id="bZ8-ww-WJa"/>
@@ -95,6 +85,9 @@
                                             <constraint firstItem="aes-15-IVl" firstAttribute="centerX" secondItem="Zk5-cC-Whu" secondAttribute="centerX" id="tOM-Yx-OuO"/>
                                         </constraints>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="srachView" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-ZV-gTI" customClass="SRScratchView" customModule="SRScratchView">
+                                        <rect key="frame" x="63" y="100" width="248" height="248"/>
+                                    </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6q-gx-mJl">
                                         <rect key="frame" x="67.5" y="373" width="240" height="128"/>
                                         <subviews>
@@ -123,23 +116,23 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="F7A-ZV-gTI" firstAttribute="width" secondItem="Zk5-cC-Whu" secondAttribute="width" id="0MH-oL-n5Y"/>
                                     <constraint firstItem="Zk5-cC-Whu" firstAttribute="top" secondItem="qOU-YE-mDQ" secondAttribute="top" constant="100" id="1nF-mL-NIx"/>
+                                    <constraint firstItem="F7A-ZV-gTI" firstAttribute="centerX" secondItem="Zk5-cC-Whu" secondAttribute="centerX" id="DCd-Br-erY"/>
+                                    <constraint firstItem="F7A-ZV-gTI" firstAttribute="centerY" secondItem="Zk5-cC-Whu" secondAttribute="centerY" id="FFW-Rk-dS1"/>
                                     <constraint firstItem="Zk5-cC-Whu" firstAttribute="centerX" secondItem="qOU-YE-mDQ" secondAttribute="centerX" id="PzG-MH-KP5"/>
                                     <constraint firstItem="Z6q-gx-mJl" firstAttribute="top" secondItem="Zk5-cC-Whu" secondAttribute="bottom" constant="25" id="Zfi-Qr-mg9"/>
                                     <constraint firstItem="Z6q-gx-mJl" firstAttribute="centerX" secondItem="qOU-YE-mDQ" secondAttribute="centerX" id="wqd-uR-E7e"/>
+                                    <constraint firstItem="F7A-ZV-gTI" firstAttribute="height" secondItem="Zk5-cC-Whu" secondAttribute="height" id="yLg-mZ-HLn"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Z2o-wx-Gdj" firstAttribute="trailing" secondItem="Mh6-j9-PUH" secondAttribute="trailing" id="12M-EY-hq2"/>
-                            <constraint firstItem="Z2o-wx-Gdj" firstAttribute="leading" secondItem="Mh6-j9-PUH" secondAttribute="leading" id="7Kh-Y2-dbL"/>
-                            <constraint firstItem="qOU-YE-mDQ" firstAttribute="width" secondItem="Z2o-wx-Gdj" secondAttribute="width" id="9bt-5E-Dve"/>
-                            <constraint firstItem="Z2o-wx-Gdj" firstAttribute="top" secondItem="Rff-dH-tHF" secondAttribute="top" id="BhB-GZ-Rai"/>
-                            <constraint firstItem="qOU-YE-mDQ" firstAttribute="height" secondItem="Z2o-wx-Gdj" secondAttribute="height" id="eMX-Kx-BXH"/>
-                            <constraint firstItem="qOU-YE-mDQ" firstAttribute="centerY" secondItem="Z2o-wx-Gdj" secondAttribute="centerY" id="fzz-4w-sfF"/>
-                            <constraint firstItem="Z2o-wx-Gdj" firstAttribute="bottom" secondItem="Mh6-j9-PUH" secondAttribute="bottom" id="hOR-v3-4O2"/>
-                            <constraint firstItem="qOU-YE-mDQ" firstAttribute="centerX" secondItem="Z2o-wx-Gdj" secondAttribute="centerX" id="oge-fm-jH7"/>
+                            <constraint firstItem="qOU-YE-mDQ" firstAttribute="centerX" secondItem="Mh6-j9-PUH" secondAttribute="centerX" id="4eS-P3-Cnz"/>
+                            <constraint firstItem="qOU-YE-mDQ" firstAttribute="height" secondItem="Rff-dH-tHF" secondAttribute="height" id="CWO-sT-krW"/>
+                            <constraint firstItem="qOU-YE-mDQ" firstAttribute="width" secondItem="Rff-dH-tHF" secondAttribute="width" id="ZS7-MG-Dbh"/>
+                            <constraint firstItem="qOU-YE-mDQ" firstAttribute="centerY" secondItem="Mh6-j9-PUH" secondAttribute="centerY" id="uh3-ZF-Kpy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mh6-j9-PUH"/>
                     </view>
@@ -156,7 +149,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="8.jpg" width="16" height="16"/>
         <image name="goldTrophy" width="100" height="100"/>
         <image name="srachView" width="600" height="527"/>
     </resources>

@@ -24,6 +24,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SRScratchView'
 ```
+or add [SAScratchView.swift](https://github.com/shamshiranees/SRScratchView/blob/master/SRScratchView/Classes/SRScratchView.swift) file into your project directory.
 ## Usage
 
 Change class of your  imageView to SRSrcatchView.
