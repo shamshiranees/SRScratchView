@@ -7,7 +7,7 @@
 
 ## ScreenShots
 
-![ScreenShot](https://i.imgflip.com/223yh1.gif)
+![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SRScratchView/master/Example/SRScratchView/screenShot.gif)
 
 ## Example
 
