@@ -1,0 +1,16 @@
+PODS:
+  - SRScratchView (1.0.0)
+
+DEPENDENCIES:
+  - SRScratchView (from `../`)
+
+EXTERNAL SOURCES:
+  SRScratchView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SRScratchView: 75cac075964f569bb3dc411cd14636a42e0cc48c
+
+PODFILE CHECKSUM: 5c419ddf83a4c4e750f06591bf057f10c0d36464
+
+COCOAPODS: 1.8.3

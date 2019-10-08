@@ -18,6 +18,20 @@
 		D24B2C84297036EA25FB81E1 /* Pods_SRScratchView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B430342557FBC59E92252438 /* Pods_SRScratchView_Tests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		513B6D38234CB43B00CB7DFC /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.swift;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# $(SWIFT_EXEC)\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A32D754199DA0968C06AD01 /* SRScratchView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SRScratchView.podspec; path = ../SRScratchView.podspec; sourceTree = "<group>"; };
+		3A32D754199DA0968C06AD01 /* SRScratchView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SRScratchView.podspec; path = ../SRScratchView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4F4F1A9CA1AB8A61D6A41430 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		51D103851FFE5E5C004C2720 /* screenShot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenShot.gif; sourceTree = "<group>"; };
 		5CFF4234B4103F3C09C4D11C /* Pods-SRScratchView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRScratchView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRScratchView_Tests/Pods-SRScratchView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,9 +188,9 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				3D57D61BABE5A896D1003D73 /* [CP] Embed Pods Frameworks */,
-				6A0905446D47096BB2951C05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
+				513B6D38234CB43B00CB7DFC /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -193,8 +207,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				3D83471BC2750339D025DB43 /* [CP] Embed Pods Frameworks */,
-				EFB356860B75B3CFE461BF67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +244,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -274,7 +287,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SRScratchView_Example/Pods-SRScratchView_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SRScratchView_Example/Pods-SRScratchView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SRScratchView/SRScratchView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -283,37 +296,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SRScratchView_Example/Pods-SRScratchView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D83471BC2750339D025DB43 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SRScratchView_Tests/Pods-SRScratchView_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A0905446D47096BB2951C05 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SRScratchView_Example/Pods-SRScratchView_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SRScratchView_Example/Pods-SRScratchView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6FEB973B70B7C031C08554E3 /* [CP] Check Pods Manifest.lock */ = {
@@ -350,21 +333,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFB356860B75B3CFE461BF67 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SRScratchView_Tests/Pods-SRScratchView_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -467,6 +435,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -512,6 +481,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -527,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -542,7 +512,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -563,7 +533,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -580,7 +550,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
