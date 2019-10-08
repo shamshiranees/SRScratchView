@@ -14,8 +14,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-Swift 4.0 <br>
-Xcode 9.0 <br>
+Swift 5.0 <br>
+Xcode 11.0 <br>
 ## Installation
 
 SRScratchView is available through [CocoaPods](http://cocoapods.org). To install
